@@ -63,7 +63,9 @@ a:hover, a:active {
    }
 
    .face {
-      fill: yellow;
+      fill: rgb(170, 123, 170);
+      stroke: white;
+      stroke-width: 2px;
       }
       
       .mouth {
