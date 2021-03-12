@@ -68,7 +68,7 @@ a:hover, a:active {
       
       .mouth {
       fill: none;
-      stroke: #000;
+      stroke: black;
       stroke-width: 6px;
       stroke-linecap: round;
       }
