@@ -1,0 +1,16 @@
+body {
+    background-color: darkcyan;
+   }
+
+.face {
+    fill: rgb(170, 123, 170);
+    stroke: white;
+    stroke-width: 2px;
+    }
+    
+    .mouth {
+    fill: none;
+    stroke: black;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    }
