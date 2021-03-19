@@ -1,3 +1,4 @@
+
 function Feil(denne) {
   denne.innerHTML = 'Feil';
 }

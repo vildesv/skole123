@@ -4,38 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../javascript/myscript.js"></script>
-    <link href="../style/jsstyle.css" rel="stylesheet" type="text/css">
-    <title>Moro med JavaScript</title>
+    <link rel="stylesheet" href="../style/javascript.css">
+    <title>Moro med JavaScript.</title>
 </head>
     <body>
-        <h1>Leker litt med JavaScript.</h1>
-        
-        <h2>Oppgave 1: Quiz </h2>
-            <h3>Spørsmål 1: Hva heter hovedstaden i Norge?</h3>
-                <p id="alt1" onclick="Feil(this)">A. Trondheim</p>
-                <p id="alt2" onclick="Riktig(this)">B. Oslo</p>
-                <p id="alt3" onclick="Feil(this)">C. Bergen</p>
 
-            <h3>Spørsmål 2: Hva er navnet på Norges høyeste fjell?</h3>
-                <p id="alt4" onclick="Riktig(this)">A. Galdhøpiggen</p>
-                <p id="alt5" onclick="Feil(this)">B. Gaustatoppen</p>
-                <p id="alt6" onclick="Feil(this)">C. Glittertind</p>
-        
-            <h3>Spørsmål 3: Hva er Norges nasjonalrett?</h3>
-                <p id="alt7" onclick="Feil(this)">A. Grandiosa</p>
-                <p id="alt8" onclick="Riktig(this)">B. Fårikål</p>
-                <p id="alt9" onclick="Feil(this)">C. Smalahove</p>
+        <h1 id="test">Hei på deg! :)</h1>
 
-            <h3>Spørsmål 4: Hvem er egentlig Kongen av Gulset?</h3>
-                <p id="alt10" onclick="Feil(this)">A. Kong Harald</p>
-                <p id="alt11" onclick="Feil(this)">B. Jonis Josef</p>
-                <p id="alt12" onclick="Feil(this)">C. Kåre Kniv</p>
-                <p id="alt13" onclick="Riktig(this)">C. Vilde Svenkesen</p>
+            <script>
+                    document.getElementById("test").addEventListener("mouseover", mouseOver);
+                    document.getElementById("test").addEventListener("mouseout", mouseOut);
+    
+                function mouseOver() {
+                    document.getElementById("test").style.color = "rgb(224, 224, 117)";
+                }
+    
+                function mouseOut() {
+                    document.getElementById("test").style.color = "black";
+                }
 
-
-
-
+            </script>
 
     </body>
 </html>
