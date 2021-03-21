@@ -9,21 +9,45 @@
 </head>
     <body>
 
-        <h1 id="test">Hei på deg! :)</h1>
+        <h2 ondblclick="dobbeltklikk()">Dobbeltklikk her...</h2>
+        <p id="test1"></p>
 
-            <script>
-                    document.getElementById("test").addEventListener("mouseover", mouseOver);
-                    document.getElementById("test").addEventListener("mouseout", mouseOut);
-    
-                function mouseOver() {
-                    document.getElementById("test").style.color = "rgb(224, 224, 117)";
-                }
-    
-                function mouseOut() {
-                    document.getElementById("test").style.color = "black";
-                }
+            <table>
+                <tr>
+                    <td id="c1" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">o</td>
+                    <td id="c2" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">o</td>
+                    <td id="c3" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">o</td>
+                </tr>
 
-            </script>
+                <tr>
+                    <td id="c4" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">o</td>
+                    <td id="c5" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">o</td>
+                    <td id="c6" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">o</td>
+                </tr>
+        
+                <tr>
+                    <td id="c7" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">o</td>
+                    <td id="c8" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">o</td>
+                    <td id="c9" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">o</td>
+                </tr>
 
+            </table>
+
+                <script>
+                    function dobbeltklikk() {
+                        document.getElementById("test1").innerHTML = "Nysgjerrigper...";
+                    }
+
+                    console.log("Hei verden!");
+
+                    function mouseOver(denne) {
+                        denne.innerHTML = "x";
+                    }
+
+                    function mouseOut(denne) {
+                        denne.innerHTML = "o";
+                    }
+
+                </script>
     </body>
 </html>

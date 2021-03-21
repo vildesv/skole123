@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/koselås.css">
+    <title>Forsøk på kodelås</title>
+</head>
+    <body>
+    
+        <h2>Forsøk på kodelås</h2>
+
+        <div id="screen" class="screen">3812</div>
+
+            <button onclick="tall(this)">1</button>
+            <button onclick="tall(this)">2</button>
+            <button onclick="tall(this)">3</button>
+            <button onclick="tall(this)">4</button>
+            <button onclick="tall(this)">5</button>
+            <button onclick="tall(this)">6</button>
+            <button onclick="tall(this)">7</button>
+            <button onclick="tall(this)">8</button>
+            <button onclick="tall(this)">9</button>
+    
+        <div id="fargeDiv" class="fargeDiv" style="background-color: hotpink;">
+        </div>
+
+            <script>
+                function tall(clickedButton) {
+                    document.getElementById("screen").innerHTML +=
+                    clickedButton.innerHTML;
+                    skiftFarge();
+                }
+
+                function skiftFarge() {
+                    console.log(document.getElementById("screen").innerText, "skiftFarge kjører");
+                    
+                    if(document.getElementById("screen").innerText == "3812") {
+                        console.log("if kjører");
+
+                    document.getElementById("fargeDiv").style.backgroundColor = "hotpink";  
+                    }
+
+                }
+    </script>
+
+</body>
+</html>
