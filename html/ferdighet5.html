@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grunnferdigheter i JavaScript - Oppgave 5</title>
+</head>
+    <body onload="funksjon()">
+
+            <div>
+                <div id="a"></div>
+                <div id="b"></div>
+                <img id="c">
+            </div>
+
+                <script>
+                    document.getElementById("b").innerHTML = 'Direkte: ' + new Date().toTimeString();
+                    
+                function funksjon() {
+                    document.getElementById("a").innerHTML = 'Onload funksjon: ' + new Date().toTimeString();
+                }
+                    document.getElementById("c").src="https://images.freeimages.com/images/large-previews/68c/delicate-arch-2-1391623.jpg"
+
+                </script>
+
+    </body>
+</html>
