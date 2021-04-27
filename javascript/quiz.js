@@ -5,4 +5,6 @@ function Feil(denne) {
 
 function Riktig(denne) {
   denne.innerHTML = 'Riktig';
+
+
 }
